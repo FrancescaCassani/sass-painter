@@ -1,0 +1,45 @@
+// HEADER
+.up {
+    background: palette(7);
+    .nav-up {
+        padding: .8rem;
+        a {
+            font-size: .8rem;
+        }
+        .nav-info {
+                .info-list {
+                    justify-content: flex-end;
+                    i {
+                        color: palette(1);
+                        margin-right: 5px;
+                    }
+                    a {
+                        padding: .8rem;
+                        color: palette(4);
+                    }
+                }
+            }
+        .nav-down {
+            display: flex;
+            align-items: flex-end;
+            padding-top: 20px;
+            img {
+                width: 90px;
+                margin-bottom: 4px;
+                margin-right: 16px;
+            }
+            .nav-item {
+                a {
+                    font-size: .9rem;
+                    color: palette(2);
+                    padding: .9rem 1.5rem;
+                    i {
+                        font-size: .8rem;
+                        color: palette(5);
+                    }
+                }
+            }
+        }
+    }
+}
+

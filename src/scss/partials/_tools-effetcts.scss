@@ -1,0 +1,72 @@
+.flexible-text {
+    padding: 70px 0 58px;
+    color: palette(2);
+    background: palette(6);
+    p {
+        margin: 22px 0 35px;
+    }
+    .flexible-info {
+        & > img {
+            width: 840px;
+        }
+        .row {
+            &:first-child {
+                margin: 100px 0;
+            }
+            .width-40 {
+                padding: 20px;
+                h4 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+} 
+
+.tools {
+    padding: 70px 0 58px;
+    .row {
+        display: flex;
+        margin: 0 auto;
+        div {
+            position: relative;
+            background: #000;
+            width: calc((100% / 5 ) - 60px );
+            margin: 45px 20px;
+            span {
+                width: 100%;
+                text-align: center;
+                color: palette(2);
+                @include center('ab-x');
+                bottom: 30px;
+                font-size: 20px;
+            }
+            img {
+                transition: transform 450ms;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        }
+    }
+}
+
+.explore {
+    background: url('../../img/brushpacks-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 8px;
+    .width-40 {
+        padding: 62px 38px 75px;
+        background: palette(2);
+        line-height: 28px;
+        margin: 50px 0;
+        &:first-child {
+            margin-right: 40px;
+        }
+        a {
+            color: palette(1);
+        }
+    }
+}

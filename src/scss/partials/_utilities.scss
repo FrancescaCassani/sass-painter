@@ -1,0 +1,133 @@
+// Set generale
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: $base-font;
+}
+
+// Container
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+// Typography
+a {
+    text-decoration: none;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.d-f {
+    display: flex;
+    list-style: none;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-center {
+    text-align: center;
+}
+
+
+// Layout
+.flex-c {
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+ .width-40 {
+    flex-basis: 40%;
+}
+
+ .width-60 {
+    flex-basis: 60%;
+}
+
+// Images
+.img-spec {
+    width: 100%;
+    height: auto;
+}
+
+ // Mixin
+@mixin center($type: 'ab-xy') {
+    @if $type == 'ab-y' {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @else if $type == 'ab-x' {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @else if $type == 'ab-xy' {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @else if $type == 'fx-y' {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @else if $type == 'fx-x' {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @else if $type == 'fx-xy' {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+ 
+// Btn 
+.btn {
+    border: 1px solid transparent;
+    color: palette(2);
+    background: none;
+    outline: none;
+    line-height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 400ms;
+    &.btn-blue {
+        background: palette(1);
+        &:hover {
+            background: #2bacfd;
+        }
+    }
+    &.btn-grey {
+        background: palette(5);
+        &:hover {
+            background: rgba(palette(5), .9);
+        }
+    }
+}
+
+
+
+

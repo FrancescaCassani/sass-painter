@@ -1,0 +1,106 @@
+.hero {
+    background: url('../../img/hero-painteressentials-7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    .hero-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hero-text {
+            color: palette(2);
+            margin-left: 28%;
+            margin-right: 10px;
+            h2,h4 {
+                font-weight: 500;
+                margin-bottom: 22px;
+            }
+            h2 {
+                font-size: 25px;
+                white-space: nowrap;
+            }
+            h4 {
+                font-size: 22px;  
+            }
+            li {
+                margin-bottom: 10px;
+                a {
+                    font-size: 1rem;
+                    color: palette(2);
+                }
+                i {
+                    color: palette(5);
+                }
+            }
+            .btn {
+                display: flex;
+                align-items: center;
+                margin-top: 25px;
+                padding: 10px;
+                span {
+                    margin-right: 12px;
+                    padding-right: 12px;
+                    border-right: solid 1px palette(2);
+                }
+                i {
+                    margin-left: 4px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .buy-now {
+        position: relative;
+        min-height: 440px;
+        color: palette(2);
+        background: palette(7);
+        width: 40%;
+        padding: 18px;
+        margin-top: 18px;
+        .price {
+            margin: 22px 0;
+            font-size: 30px;
+            font-weight: 500;
+            p {
+                color: palette(4);
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .btn {
+            padding-left:30px ;
+            padding-right:30px;
+        }
+        .description {
+            margin-top: 60px;
+            padding: 12px;
+            color: palette(7);
+            background: palette(2);
+            h5 {
+                font-weight: 500;
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+                margin: 10px 0;
+            }
+            a {
+                font-size: 15px;
+                font-weight: 500;
+                color: palette(1);
+            }
+        }
+    }
+}
+
+.spec {
+    background: palette(3);
+    .spec-item {
+        padding: 14px 25px 14px;
+        a {
+            color: #555;
+            font-size: 18px;
+        }
+    }
+}

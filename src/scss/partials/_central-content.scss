@@ -1,0 +1,116 @@
+.painting-section {
+    background: url('../../img/intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .painting-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-top: 90px;
+        color: palette(2);
+        a {
+            display: flex;
+            align-items: center;
+            color: palette(2);
+            margin-bottom: 60px;
+        }
+        p {
+            margin: 22px 0 36px;
+        }
+        .preview {
+            position: relative;
+            img {
+                &.img-spec {
+                    @include center('ab-x');
+                    max-width: 100%;
+                    z-index: 5;
+                    bottom: 0;
+                }
+                &.video-prev {
+                    vertical-align: bottom;
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+.drawing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 85px 0 65px;
+    color: palette(7);
+    p {
+        margin: 22px 0 65px;
+    }
+    .slider {
+        position: relative;
+        .slider-img {
+            width: 900px;
+            max-width: 100%;
+        }
+        .slider-arrows-center {
+            i {
+                @include center('ab-y');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 26px;
+                width: 36px;
+                height: 36px;
+                background: #f74d04;
+                color: palette(2);
+                cursor: grabbing;
+                &.left {
+                    left: 46%;
+                }
+                &.right {
+                    right: 46%; 
+                }
+            }
+        }
+        .slider-arrows {
+            i {
+                @include center('ab-y');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 26px;
+                width: 36px;
+                height: 36px;
+                background: #f74d04;
+                border-radius: 50%;
+                color: palette(2);
+                cursor: grabbing;
+                &.left {
+                    left: -15%;
+                }
+                &.right {
+                    right: -15%;
+                }
+            }
+        }
+    }
+}
+
+.attach-img {
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    &.first {
+        background-image: url('../../img/image-bg-02.jpg');
+    }
+    &.second {
+        background-image: url('../../img/image-bg-01.jpg');
+    }
+}
